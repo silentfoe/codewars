@@ -4,6 +4,10 @@
 
 // Return true if the array contains the value, false if not.
 
+
+
+//first try at the problem
+
 function check(a, x) {
 
   
@@ -12,3 +16,8 @@ function check(a, x) {
     
     
   }
+
+
+  //refactored solution to one line
+
+  const check = (a, x) => a.includes((x))
