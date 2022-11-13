@@ -18,6 +18,8 @@ function noSpace(x){
 }
 
 
+//refactoring the code for one line
 
+let noSpace = (x) => x.split(' ').join('')
 
 
