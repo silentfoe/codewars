@@ -12,3 +12,9 @@ function solution(str){
     return str.split('').reverse().join('')
     
   }
+
+
+  //refactoring to have one line of code
+
+
+   const solution = str => str.split('').reverse().join('');
