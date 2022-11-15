@@ -12,4 +12,7 @@ function removeChar(str){
 
 
 
-  
+  //refactor for one line
+
+
+  const removeChar = str => str.slice(1,-1)
