@@ -34,6 +34,10 @@ var max = function(list){
 }
 
 
+//refactor for one line of code with each function
 
+const min = list => Math.min(...list)
+
+const max = list => Math.max(...list)
 
 
