@@ -21,3 +21,19 @@ var max = function(list){
 }
 
 
+//using the spread operator instead of the apply method. I think this looks better
+
+var min = function(list){
+    //spread operator 
+    return Math.min(...list)
+}
+
+var max = function(list){
+    //spread operator 
+    return Math.max(...list)
+}
+
+
+
+
+
