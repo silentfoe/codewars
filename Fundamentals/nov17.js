@@ -20,3 +20,7 @@ function paperwork(n, m) {
     
   }
   
+
+  // refactor for one line using ternary operator
+
+  const paperwork = (n,m) => (n < 0 || m < 0) ? 0 : (n * m);
