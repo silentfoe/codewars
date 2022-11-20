@@ -13,6 +13,7 @@
 
 function betterThanAverage(classPoints, yourPoints) {
   
+     //going through classPoints to find the average and assign to school for readability
     let school = classPoints.reduce((prev,curr) => prev + curr,0) / classPoints.length
     
     
@@ -24,4 +25,10 @@ function betterThanAverage(classPoints, yourPoints) {
     return true
     
   }
+
+  
+
+  // refactor for one line of code
+
+  const betterThanAverage = (classPoints,yourPoints) => yourPoints > (classPoints.reduce((prev,curr) => prev + curr,0) / classPoints.length) ? true : false;
   
