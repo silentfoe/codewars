@@ -19,3 +19,8 @@ function setAlarm(employed, vacation){
     return false
   
   }
+
+
+  // refactor for one line
+
+  const setAlarm = (employed, vacation) => employed === true && vacation === false ? true : false;
