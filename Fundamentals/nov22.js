@@ -18,6 +18,16 @@ function opposite(number) {
       
     return (number * -1)
       
-  }
+  };
 
+
+
+  // refactor for one line using ternary operator
+
+  const opposite = number => Math.sign(number) === -1 ? number * -1 : number * -1; 
   
+
+
+  // what I should have done but was overthinking the problem. This is after looking at the solutions on code wars. -_-
+
+  const opposite = number => -number;
