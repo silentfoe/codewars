@@ -37,3 +37,23 @@ function arithmetic(a, b, operator){
               
     }
 }
+
+
+// trying with "if then" statements
+
+function arithmetic(a, b, operator){
+  
+    if(operator === 'add') {
+
+        return a + b
+    } else if(operator === 'subtract') {
+
+
+        return a - b 
+    }else if (operator === 'multiply') {
+
+        return a * b 
+    }
+
+    return a / b
+}
