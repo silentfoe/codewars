@@ -24,3 +24,21 @@ function sum (numbers) {
       
       
   };
+
+
+  // using for loop instead of reduce method
+
+  function sum (numbers) {
+    
+  
+    let initial = 0
+    
+    for(let i = 0; i < numbers.length; i++) {
+      
+      initial += numbers[i]
+    }
+    
+    return initial
+      
+      
+  };
