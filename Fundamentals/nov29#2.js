@@ -24,3 +24,25 @@ function friend(friends){
   // refactor for one line
 
   const friend = friends => friends.filter(word => word.length === 4)
+
+
+  //using for each and for loop to solve
+
+  function friend(friends){
+  
+  
+    let words = []
+    
+    
+    friends.forEach((word) => {
+      
+      if(word.length === 4){
+        
+        words.push(word)
+      }
+      
+    })
+    
+    return words
+    
+  }
