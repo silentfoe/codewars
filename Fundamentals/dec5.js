@@ -13,3 +13,9 @@ function problem(x){
     
     
   }
+
+
+  // using ternary operator
+
+
+  const problem = x => typeof x === 'string' ? 'Error' : (x * 50) + 6;
