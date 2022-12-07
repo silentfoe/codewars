@@ -17,3 +17,9 @@ const areaOrPerimeter = function(l , w) {
     
     return (2*l) + (2*w)
   };
+
+
+  //using ternary operator
+
+
+  const areaOrPerimeter = (l,w) => l === w ? l * w : (2 * l) + (2 * w);
