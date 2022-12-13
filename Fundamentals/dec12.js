@@ -7,16 +7,24 @@
 // Write a code that gives out the total amount for different days(d).
 
 
+//first attempt to solve
+
 function rentalCarCost(d) {
   
     let cost = d * 40
     
-    if(d >= 3){
-      return cost - 20
-    }else(d >= 7) {
+    if(d >= 7){
       return cost - 50
+      
+    }else if(d >= 3) {
+      
+      return cost - 20
+    } else {
+      
+      return cost
+      
     }
     
-    return cost
+    
     
   }
