@@ -20,3 +20,21 @@ function findMultiples(integer, limit) {
     
     
   }
+
+
+  //using while loop instead of for loop
+
+  function findMultiples(integer, limit) {
+  
+    let arr = []
+    
+    let n = integer
+    
+    while(n <= limit){
+      arr.push(n)
+      n += integer
+    }
+    
+    return arr
+    
+  }
