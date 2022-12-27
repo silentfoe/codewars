@@ -21,3 +21,20 @@ function sumStr(a,b) {
     return (Number(a) + Number(b)).toString()
     
   }
+
+  //using the + operator to convert the string to a number
+
+  function sumStr(a,b) {
+  
+    return (+a + +b).toString()
+    
+  }
+
+
+  // also could use the ~~ operator to convert the string to a number
+
+  function sumStr(a,b) {
+  
+    return (~~a + ~~b).toString()
+    
+  }
