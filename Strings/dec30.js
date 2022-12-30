@@ -16,4 +16,19 @@ function reverse(string){
   }
 
   
+  //solving using reverse for loop
+
+  function reverse(string){
   
+    let str = []
+    
+    let split = string.split(' ')
+    
+    for(let i = split.length - 1; i >= 0; i--){
+      
+      str.push(split[i])
+      
+    }
+    
+    return str.join(' ')
+  }
