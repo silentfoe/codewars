@@ -19,6 +19,7 @@ if( bullets/ 2 >= dragons){
 
 function hero(bullets, dragons){
 
+    //note: I don't need the true:false eval. Can make this cleaner since the statement will return true or false by itself. 
 return bullets/2 >= dragons ? true : false;
   
 }
