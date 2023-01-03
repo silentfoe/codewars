@@ -10,3 +10,18 @@ function grow(x){
     return x.reduce((prev,curr) => prev * curr)
   
   }
+
+
+  //using for loop to solve
+
+  function grow(x){
+  
+    let ans = 1
+    
+    for(let i = 0; i < x.length; i++){
+      
+      ans *= x[i]
+    }
+    
+    return ans
+  }
