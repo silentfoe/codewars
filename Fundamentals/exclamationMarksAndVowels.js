@@ -18,3 +18,25 @@ function replace(s){
     
   }
 
+//using for loop to solve
+
+function replace(s){
+  
+  let wrd = ''
+  
+  let vowels = ['a','e','i','o','u']
+  
+  for(let i = 0; i < s.length; i++){
+    
+    if(vowels.indexOf(s.toLowerCase()[i]) >= 0) {
+      
+      wrd += '!'
+      
+    } else {
+      wrd += s[i]
+    }
+    
+  }
+  
+  return wrd
+}
