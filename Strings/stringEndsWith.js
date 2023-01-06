@@ -20,5 +20,14 @@ function solution(str, ending){
     
     return chars === ending
     
+  }
+
+
+//second solution using 'endsWith' method
+
+function solution(str, ending){
+  
+    return str.endsWith(ending)
     
   }
+  
