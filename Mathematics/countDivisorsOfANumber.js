@@ -26,3 +26,24 @@ function getDivisorsCnt(n){
     return count 
     
   }
+
+
+  //using while loop to solve
+
+  function getDivisorsCnt(n){
+    
+    let count = 0
+    
+    let num = 1
+    
+    while(num <= n){
+      
+      if(n % num === 0){
+        count += 1
+      }
+      num++
+    }
+    
+    return count 
+    
+  }
