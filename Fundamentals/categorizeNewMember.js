@@ -22,15 +22,30 @@ function openOrSenior(data){
     let flatArr = data.flatMap(char => char)
     
     for(let i = 0; i < flatArr.length; i += 2){
-      
       if(flatArr[i] > 54 && flatArr[i + 1] > 7){
         category.push("Senior")
       }else{
         category.push("Open")
       }
-      
     }
     
     return category
+}
+
+// figured out I don't need to use flatMap and can just use flat method instead
+
+function openOrSenior(data){
+  
+    let category = []
     
-  }
+    let flatArr = data.flat()
+    
+    for(let i = 0; i < flatArr.length; i += 2){
+      if(flatArr[i] > 54 && flatArr[i + 1] > 7){
+        category.push("Senior")
+      }else{
+        category.push("Open")
+      }
+    }
+  return category
+}
