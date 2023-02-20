@@ -8,8 +8,9 @@
 // 3 --> 36 (sum of the cubes of 1, 2, and 3 is 1 + 8 + 27)
 
 
-// my solution: 
+// my solutions: 
 
+//using for loop
 function sumCubes(n){
   
     let sum = 0
@@ -20,4 +21,29 @@ function sumCubes(n){
     
     return sum
     
-  }
+}
+
+  //using while loop
+function sumCubes(n){
+  
+    let sum = 0
+    
+    while(n > 0){
+      sum += n ** 3
+      n--
+    }
+    
+    return sum
+} 
+
+  
+  // using recursion
+  function sumCubes(n){
+    
+    if(n === 0){
+      return 0
+    }
+    
+    return n ** 3 + sumCubes(n - 1)
+}
+  
