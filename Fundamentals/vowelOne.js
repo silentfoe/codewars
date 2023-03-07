@@ -26,3 +26,18 @@ function vowelOne(s){
   }
   return str
 }
+
+// using ternary instead
+
+function vowelOne(s){
+
+    const vowels = ['a','e','i','o','u']
+    const lower = s.toLowerCase()
+    let str = ''
+    
+    for(let i = 0; i < lower.length; i++){
+      vowels.indexOf(lower[i]) === -1 ? str += 0 : str += 1;
+    }
+    return str
+  }
+  
