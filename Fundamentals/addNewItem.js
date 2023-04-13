@@ -6,18 +6,16 @@
 
 // P.S. You have to create a new list and add a new item to that. (This Kata is originally designed for C# language and it shows that adding a new item to the input list is not going to work, even though the parameter is passed by value, but the value is poining to the reference of list and any change on parameter will be seen by caller)
 
-// my solution: 
+// The above description is trash. Here is what you need to do based on the comments found: Add the length of an array to a new copied version of the array and return it. (But keep the first array as it is!)
+
+// my updated solution: 
 
 function addExtra( listOfNumbers ){
   
-  let arr = []
-  
-  for(let i = 0; i < listOfNumbers.length; i++){
-    arr.push(i + 1)
+    let arr = listOfNumbers.slice(0)
+    
+    arr.push(listOfNumbers.length)
+    
+    return arr
+    
   }
-  
-  arr.push(9)
-  
-  return arr
-  
-}
