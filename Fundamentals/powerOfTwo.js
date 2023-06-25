@@ -14,10 +14,10 @@
 
 function isPowerOfTwo(n){
   
-  for(let i = 0; i <= n; i++){
-    if(2 ** i === n){
-      return true
+    for(let i = 0; i <= n/2; i++){
+      if(2 ** i === n){
+        return true
+      }
     }
+    return false
   }
-  return false
-}
