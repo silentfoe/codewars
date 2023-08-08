@@ -22,12 +22,9 @@
 
  function waterbombs(fire, w) {
   // split each section of the fire between the 'Ys'
-  //filter out the buildings
   //use the Math.ceil on (fire.length divided by width) to get the most amout of water needed for each section of the fire
   // use the reduce method to add up the total number of water needed
   
-   return fire.split('Y')
-              .filter(item => item !== 'Y')
-              .map(fire => Math.ceil(fire.length/w))
-              .reduce((prev,curr) => prev + curr ,0)
+   return fire.split('Y').reduce((prev,curr) => prev + Math.ceil(curr.length / w), 0)
+              
 }
