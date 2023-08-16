@@ -12,5 +12,5 @@
 // my solution: 
 
 function tea42(input) {
-  return input.toString().split('').map(char => char * 1 === 2 ? 't' : char).join('')
+  return input.toString().split('').map(char => char === '2' ? 't' : char).join('')
 };
