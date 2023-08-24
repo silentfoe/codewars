@@ -12,7 +12,7 @@
 
 // my solution: 
 
-
+clear
 var nato = (function() {
   var letters =  {
     "A": "Alpha",  "B": "Bravo",   "C": "Charlie",
