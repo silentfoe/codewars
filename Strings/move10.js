@@ -10,18 +10,19 @@
 
 function moveTen(s){
   
-  const alpha = 'abcdefghijklmnopqrstuvwxyz'
-  
-  let str = ''
-  
-  for(let i = 0; i < s.length; i++){
-    if(alpha.indexOf(s[i]) + 10 > 26){
-      str += alpha[((alpha.indexOf(s[i]) + 10) - 26)]
-    }else if(s[i] === 'z'){
-      str += 'a'
-    }else{
-      str += alpha[alpha.indexOf(s[i]) + 10]
+    const alpha = 'abcdefghijklmnopqrstuvwxyz'
+    
+    let str = ''
+    
+    for(let i = 0; i < s.length; i++){
+      let num = alpha.indexOf(s[i]) + 10
+      
+      if(num > 25){
+        str += alpha[num - 26]
+      }else{
+        str += alpha[num]
+      }
     }
+    
+    return str
   }
-  return str
-}
