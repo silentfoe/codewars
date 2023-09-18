@@ -19,22 +19,18 @@
 // Julia: nothing
 // Nim: none(int) (See options)
 
-// my solution does not work currently for one test but do not know why. Will need to fix for the one test it is failing. 
 // my solution: 
 
 function firstNonConsecutive (arr) {
 
-  for(let i = 0; i < arr.length; i++){
-   
-    if(arr[i + 1]){
-      if(arr[i + 1] - 1 !== arr[i]){
-        console.log(arr[i])
-        console.log(arr[i + 1])
-        return arr[i + 1]
-      }
-    }
+    let count = arr[0]
     
+    for(let i = 1; i < arr.length; i++){
+      if(arr[i] - 1 !== count){
+        return arr[i]
+      }
+      count++
+      
+    }
+    return arr.length === 1 ? arr[0] : null
   }
-  console.log(arr)
-  return arr.length === 1 ? arr[0] : null
-}
