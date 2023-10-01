@@ -20,3 +20,11 @@ function solution(pairs){
   return arr.join(',')
   
 }
+
+// better solution found on code wars: 
+
+function solution(pairs){
+    return Object.keys(pairs)
+      .map(function(k) { return k + ' = ' + pairs[k] })
+      .join(',');
+  }
