@@ -16,3 +16,13 @@
 
 // my solution: 
 
+var splitInParts = function(s, partLength){
+  
+    let str = ''
+    
+    for(let i = 0; i < s.length; i+=partLength){
+      str += s.slice(i,i + partLength) + ' '
+    }
+   
+    return str.slice(0,-1)
+  }
