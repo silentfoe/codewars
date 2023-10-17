@@ -11,16 +11,14 @@
 // "John Doe hs seven red pples under his bsket"          =>  0  ; missing: "a"
 // "Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing: "o"
 
-// my solution: 
+// my solution:
 
-function absentVowel(x){
-  
-  const vowels = ['a','e','i','o','u']
-  
-  for(let i = 0; i < vowels.length; i++){
-    if(!x.includes(vowels[i])){
-      return i
+function absentVowel(x) {
+  const vowels = ["a", "e", "i", "o", "u"];
+
+  for (let i = 0; i < vowels.length; i++) {
+    if (!x.includes(vowels[i])) {
+      return i;
     }
   }
-
 }

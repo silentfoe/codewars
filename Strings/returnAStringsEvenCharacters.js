@@ -5,14 +5,12 @@
 // "abcdefghijklm" --> ["b", "d", "f", "h", "j", "l"]
 // "a"             --> "invalid string"
 
-// my solution: 
+// my solution:
 
 function evenChars(string) {
-
-  if(string.length < 2 || string.length > 100){
-    return 'invalid string'
+  if (string.length < 2 || string.length > 100) {
+    return "invalid string";
   }
-  
-  return string.split('').filter((char,indx) => (indx + 1 ) % 2 === 0)
-  
+
+  return string.split("").filter((char, indx) => (indx + 1) % 2 === 0);
 }
