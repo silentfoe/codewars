@@ -33,24 +33,22 @@
 // my solution
 
 function infected(s) {
-  const totalPop = s.split("X").join("").length;
-  let infected = 0;
-
-  if (!s.includes("X")) {
+  if (!s.includes("X") && s.includes("1")) {
     return 100;
   }
 
-  if (!s.includes("1") || !s.includes("0")) {
+  if (!s.includes("1") && !s.includes("0")) {
     return 0;
   }
 
-  const world = s
-    .split("X")
-    .map((country) =>
-      country.includes("1") ? (infected += country.length) : (infected += 0)
-    );
+  const totalPop = s.split("X").join("").length;
+  let infected = 0;
 
-  console.log(s);
+  const world = s.split("X").map((country) => {
+    if (country.includes("1")) {
+      infected += country.length;
+    }
+  });
 
   return 100 * (infected / totalPop);
 }
