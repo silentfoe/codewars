@@ -11,3 +11,16 @@
 // 3.1 needs to become $3.10
 
 // my solution:
+
+function formatMoney(amount) {
+  if (
+    amount.toString().includes(".") &&
+    amount.toString().split(".")[1].length === 1
+  ) {
+    return `$${amount}0`;
+  } else if (!amount.toString().includes(".")) {
+    return `$${amount}.00`;
+  } else {
+    return `$${amount}`;
+  }
+}
